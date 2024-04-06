@@ -1,0 +1,17 @@
+package set;
+
+import java.util.HashSet;
+
+public class StudentHashTask {
+	public static void main(String[] args) {
+		//hashSet객체 생성
+		HashSet<Student> set = new HashSet<>();
+		
+		//Student 객체 생성 및 equals 메소드 테스트
+		Student st1 = new Student(1,"장윤근");
+		boolean isTrue = st1.equals(new Student(1,"홍길동"));
+		System.out.println(isTrue);
+		
+	}
+
+}

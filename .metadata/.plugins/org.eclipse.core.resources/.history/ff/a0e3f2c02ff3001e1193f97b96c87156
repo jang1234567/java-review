@@ -1,0 +1,35 @@
+package final1;
+
+public class Post {
+	
+	//필드
+	private int id;
+	private String title;
+	private String content;
+	
+	
+	//메소드
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+	
+	
+	
+
+}

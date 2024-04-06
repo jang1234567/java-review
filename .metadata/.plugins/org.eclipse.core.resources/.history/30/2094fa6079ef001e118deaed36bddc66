@@ -1,0 +1,29 @@
+package task05;
+
+public class Student {
+	//필드
+	String name;
+	
+	//생성자
+	int score;
+	public Student(String name, int score) {
+		this.name = name;
+		this.score = score;
+	}
+	
+	//메소드
+	//최고 점수를 가진 학생의 이름과 점수
+	void maxScore(Student[] students) {
+		Student highestScore = students[0];
+		for(int i = 1 ; i < 5; i++) {
+		if(students[i].score > highestScore.score) {
+			highestScore = students[i];
+		}
+		System.out.println("최고점수를 가진 학생의 이름: " + highestScore.name);
+		System.out.println("최고점수를 가진 학생의 점수: " + highestScore.score);
+		}
+		
+	}
+	
+
+}

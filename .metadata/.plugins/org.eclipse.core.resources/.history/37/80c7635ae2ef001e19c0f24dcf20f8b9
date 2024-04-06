@@ -1,0 +1,13 @@
+package ex01;
+
+public class Main {
+	public static void main(String[] args) {
+		//점수 배열 생성
+		int[] grades = {100,90,80};
+		//학생 생성
+		Student s1 = new Student("장윤근", grades);
+		s1.showGradeInfo();
+		
+	}
+
+}

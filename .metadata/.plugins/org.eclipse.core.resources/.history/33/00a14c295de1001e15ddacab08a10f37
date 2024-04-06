@@ -1,0 +1,22 @@
+package home03;
+
+import java.util.Scanner;
+
+public class Ex03 {
+	public static void main(String[] args) {
+		
+		//정수형 변수 선언
+		//입력클래스 호출,import
+		//while문으로 반복문
+		
+		int num = 0;
+		int sum =  num+=num;
+		Scanner sc = new Scanner(System.in);
+		
+		while(num != 0) {
+			System.out.println(sum);
+		}
+		
+
+	}
+}

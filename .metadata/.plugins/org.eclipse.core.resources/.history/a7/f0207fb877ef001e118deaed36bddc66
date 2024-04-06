@@ -1,0 +1,17 @@
+package task05;
+
+public class Student {
+	//필드
+	String name;
+	
+	//생성자
+	int score;
+	public Student(String name, int score) {
+		this.name = name;
+		this.score = score;
+	}
+	
+	//메소드
+	
+
+}

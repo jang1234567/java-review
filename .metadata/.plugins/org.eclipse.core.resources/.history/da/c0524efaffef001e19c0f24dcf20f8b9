@@ -1,0 +1,29 @@
+package list;
+
+import java.util.ArrayList;
+
+public class ArrayTest2 {
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<>();
+		
+		list.add(10);
+		list.add(30);
+		list.add(50);
+		list.add(70);
+		list.add(90);
+		System.out.println(list);
+		
+		//값 가져오기 : index번호로 특정 값 가져오기
+		System.out.println(list.get(1));
+		
+		//삭제 : index 번호로 검색해서 삭제(int 타입으로 넘겨줘야함) , 삭제한 요소를 반환함
+		System.out.println(list.remove(1) + " 를 삭제했습니다");
+		
+		//삭제 : 값으로 검색해서 삭제 (Object 타입으로 넘겨줘야함) , 삭제한 요소를 반환함 
+		// 삭제 성공 여부를 boolean타입으로 반환함
+		list.remove(list.remove(Integer.valueof(90)));
+		System.out.println(list);
+
+	}
+
+}

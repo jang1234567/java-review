@@ -1,0 +1,26 @@
+package list;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListTest3 {
+   public static void main(String[] args) {
+      ArrayList<Integer> list = new ArrayList<>();
+      
+      for(int i = 0; i < 10; i ++ ) {
+    	  list.add((10-i) * 10);
+      }
+      System.out.println(list);
+      
+      Collections.sort(list);	//오름차순 정렬
+      System.out.println(list);
+      //내림차순 정렬
+      Collections.sort(list, Collections.reverseOrder());
+      System.out.println();
+      
+      Collections.shuffle(list);
+      System.out.println(list);
+
+     
+   }
+}

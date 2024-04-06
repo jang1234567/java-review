@@ -1,0 +1,37 @@
+package test;
+
+import java.util.Scanner;
+
+public class Ex06 {
+	public static void main(String[] args) {
+		//세개의 정수형 변수 선언,문자열 변수 1개 선언
+		//입력클래스 호출, import
+		//입력받기위한 출력문
+		//nextInt사용하여 변수에 입력받은 값 저장
+		//입력받기위한 출력문
+		//nextInt사용하여 변수에 입력받은 값 저장
+		//입력받기위한 출력문
+		//nextInt사용하여 변수에 입력받은 값 저장
+		//삼항연산자를 이용하여 두수가 모두양수면 양수 아니면 아니다 출력
+		
+		int num1 = 0, num2 = 0, num3 ==0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수1 : ");
+		num1 = sc.nextInt();
+		System.out.println("정수2 : ");
+		num2 = sc.nextInt();
+		System.out.println("정수3 : ");
+		num3 = sc.nextInt();
+		
+		if(num1 % 2 ==0 && num2 % 2 == 0 && num3 % 2 ==0) {
+			System.out.println("세수 모두 짝수입니다");
+		}else {
+			System.out.println("아니다");
+		}
+		
+		
+		
+	}
+
+}

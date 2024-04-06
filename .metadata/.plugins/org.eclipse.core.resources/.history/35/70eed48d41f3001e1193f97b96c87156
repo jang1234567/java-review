@@ -1,0 +1,49 @@
+package final1;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+
+import java.util.Set;
+
+// Board 클래스
+public class Board {
+	public static HashMap<Integer, Post> postList = new HashMap();
+	Post post = new Post();
+	int i = 1;
+
+	// 게시물 저장하기 메소드//조회까지
+	public HashMap<Integer, Post> addPost(String title, String content) {
+		post.setId(i++);
+		post.setTitle(title);
+		post.setContent(content);
+		postList.put(post.getId(), post);
+		System.out.println("ID : " + post.getId() + " 제목 : " + post.getTitle() + " 내용 : " + post.getContent());
+		return postList;
+
+	}
+
+	// 게시물 조회
+	void getAllPosts() {
+		Set<Entry<Integer, Post>> all = postList.entrySet();
+		for (Entry<Integer, Post> entry : all) {
+			System.out.println(entry);
+
+		}
+	}
+
+	// 삭제하기
+	public void deletePost(int id) {
+
+		id = post.getId();
+		if (id == 0 || id > post.getId()) {
+			try {
+				postList.remove(id);
+				System.out.println(id + "가 삭제되었습니다");
+				throw new MyException("해당 ID의 게시판이 없습니다");
+			} catch (MyException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

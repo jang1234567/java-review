@@ -1,0 +1,30 @@
+package home03;
+
+import java.util.Scanner;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		//두개의 정수형변수와 문자형 변수 1개 선언및 초기화
+		//입력클래스 호출, import
+		//입력받은 사칙연산 변수에 저장
+		//변수값과 나온 사칙연산을 가지고 연산결과 출력
+		
+		int num1 = 10, num2 = 5;
+		char cal = ' ';
+		Scanner sc = new Scanner(System.in);
+		cal = sc.next().charAt(0);
+		
+		switch(cal) {
+		
+		case 1:
+			cal = '+';
+			System.out.println(num1 + num2);
+			
+		case 2:
+			cal = '-';
+			System.out.println(num1 - num2);
+		
+		}
+	}
+
+}
