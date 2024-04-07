@@ -16,25 +16,26 @@ public class SwitchTest01 {	//SwitchTest01클래스 시작영역
 		//=> 정수형변수 choice와 같은값을 가질때 해당 영역의 case 실행
 		case 1: case 3:	//choice가 1 또는 3일때 실행
 			result = "홀수";		//문자열 변수 result에 홀수 라는 문자열 값 저장
-			break;
-		case 2: case 4:
-			result = "짝수";
-			break;
+			break;			//당장 조건문을 종료한다
+		case 2: case 4:	//choice가 2 또는 4일때 실행
+			result = "짝수";	//문자열 변수 result에 짝수 라는 문자열 값 저장
+			break;	//당장 조건문을 종료한다
 //		case 3:
 //			result = "홀수";
 //			break;
 //		case 4:
 //			result = "짝수";
 //			break;
-		default:
-			result = "잘못입력했습니다";
-			break;
-		}
+		default:	//모든 조건과 일치하지 않을때
+			result = "잘못입력했습니다";		//문자열 변수 result에 잘못입력했습니다 라는 문자열 값 저장
+			break;	//당장 조건문을 종료한다
+		} //switch case 문 종료
 		System.out.println(result);
+		//문자열 변수 result출력
 		
 		
-	}
-}
+	} //메인메소드 종료
+}	//SwitchTest01 종료
 
 
 

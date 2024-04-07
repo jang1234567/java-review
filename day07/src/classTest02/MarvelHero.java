@@ -3,7 +3,7 @@ package classTest02;
 public class MarvelHero {
 	//필드
 	String name;
-	String superpower;
+	String superpower;//
 	int age;
 	
 	//메소드

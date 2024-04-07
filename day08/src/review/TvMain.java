@@ -23,7 +23,7 @@ public class TvMain {//TvMain 클래스 시작
 		System.out.println(sTv2.ch);//(sTv2)객체의 정수형 변수 ch 호출 => 생성자에서 10으로 초기화해줌 
 		
 		
-		
+		//
 	}//메인메소드 종료
 }//TvMain 클래스 종료
 

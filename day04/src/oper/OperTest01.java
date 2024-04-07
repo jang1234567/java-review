@@ -30,6 +30,7 @@ public class OperTest01 {
 		System.out.println(num1 < 15 || num2 >= 20);
 		System.out.println(num1 < 15 && num2 > 20);
 		System.out.println("===============");		
+		//부정연산자
 		System.out.println(!true);
 		System.out.println(!(num1 == 10));
 	}

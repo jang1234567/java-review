@@ -1,0 +1,9 @@
+package whileTest;
+
+public class Dori {
+	public static void main(String[] args) {
+		Dori2 doriri = new Dori2();
+		doriri.print();
+	}
+
+}

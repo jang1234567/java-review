@@ -9,7 +9,8 @@ public class ArrayTest02 {
 		System.out.println(ar1[4]);
 		
 		//몇칸 만들지만 알 때
-		int[] ar2 = new int[3];
+		int[] ar2 = null;
+		ar2 = new int[3];
 		System.out.println(ar2); //참조값
 		System.out.println(ar2[0]); //초기값
 		System.out.println(ar2[1]); //초기값

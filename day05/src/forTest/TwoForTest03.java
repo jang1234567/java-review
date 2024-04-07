@@ -1,21 +1,21 @@
 package forTest;
 
-public class TwoForTest03 {
+public class TwoForTest03 {//TwoForTest03클래스 시작
 	// 구구단 2단~9단까지 탭키 적용해서 단마다 가로로 출력하기
 
 //	// 바깥for => 2~9
 //	// 안쪽for => 1~9
-	public static void main(String[] args) {
+	public static void main(String[] args) {//메인메소드 시작
 //
-//		for (int dan = 2; dan < 10; dan++) {
-//			for (int num = 1; num < 10; num++) {
-//				System.out.print(dan + " x " + num + " = " + dan * num);
-//				if(num != 9) {
-//					System.out.print("\t");
-//				}
-//			}//안쪽for문 끝나는 영역
-//			System.out.println();
-//		}
+		for (int dan = 2; dan < 10; dan++) {//외부 for반복문 시작, 정수형 변수 dan이 2고 10 미만까지 반복, 반복시마다 dan 1씩증가
+			for (int num = 1; num < 10; num++) {//내부 for반복문 시작, 정수형 변수 num이 1이고 10 미만까지 반복, 반복시마다 num1씩 증가
+				System.out.print(dan + " x " + num + " = " + dan * num);//정수형 변수 num과  dan, num * dan 출력
+				if(num != 9) {//if조건문 시작, 만약 정수형 변수 num이 9가 아닐때
+					System.out.print("\t");//서식문자 탭키 출력
+				}//if 조건문 종료
+			}//안쪽for문 끝나는 영역
+			System.out.println(); //내부 반복문 종료시 줄바꿈
+		}//외부 for문 종료
 
 		for (int num = 1; num <= 9; num++) {
 			for (int dan = 2; dan <= 9; dan++) {

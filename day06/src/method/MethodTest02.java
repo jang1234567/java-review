@@ -7,7 +7,7 @@ public class MethodTest02 {
 	void printName() {
 		System.out.println("===매개변수와 리턴값이 없는 "
 				+ "메소드가 호출되었습니다===");
-		System.out.println("김영선");
+		System.out.println("장윤근");
 	}
 	
 	//2) 매개변수 o, 리턴값 x 메소드 정의
