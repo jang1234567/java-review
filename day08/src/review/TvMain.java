@@ -9,6 +9,7 @@ public class TvMain {//TvMain 클래스 시작
 		System.out.println(sTv); //객체의 주소값 호출
 		System.out.println(sTv.power);//객체의 논리형 변수 power 값 호출 => boolean타입의 기본값은 false
 		sTv.power = true;// (sTv)객체의 power값에 true대입
+		sTv.powerOnOff();
 		System.out.println(sTv.power);//객체의 논리형 변수 power 값 호출 => true
 		System.out.println(sTv.ch);	//(sTv)객체의 정수형 변수 ch값 호출 => int 타입의 기본값은 0
 		sTv.ch = 22;	//(sTv)객체의 ch값에 22대입

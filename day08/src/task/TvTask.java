@@ -2,8 +2,8 @@ package task;
 
 import java.util.Scanner;
 
-public class TvTask {
-	public static void main(String[] args) {
+public class TvTask {//TvTask클래스 시작
+	public static void main(String[] args) {//메인메소드 시작
 		String msg = "1. 전원 버튼\n" 
 				+ "2. 채널 올리기\n"
 				+ "3. 채널 내리기\n"
