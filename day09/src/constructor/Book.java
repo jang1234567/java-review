@@ -1,6 +1,6 @@
 package constructor;
 
-public class Book {
+public class Book {//클래스 시작
 	//필드 : 책제목, 책저자, 가격, 출판년도
 	String title;
 	String author;
@@ -11,7 +11,7 @@ public class Book {
 	public Book() {
 		
 	}
-	
+	//제목과 저자, 가격, 출판년도를 모두받는 생성자
 	public Book(String title, String author, int price, int year) {
 		this.title = title;
 		this.author = author;

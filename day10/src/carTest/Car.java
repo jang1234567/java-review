@@ -1,6 +1,6 @@
 package carTest;
 
-public class Car {
+public class Car {//클래스 시작
 	// 필드
 	// 브랜드, 색상, 가격
 	String brand;
@@ -23,11 +23,11 @@ public class Car {
 
 	// 생성자 : alt + shift + s + o
 	// 기본생성자
-	// 매개변수 3개 있는 생성자
+	
 	public Car() {
 		super();
 	}
-
+	// 매개변수 3개 있는 생성자	
 	public Car(String brand, String color, int price) {
 		super();
 		System.out.println(super.toString());
@@ -36,7 +36,7 @@ public class Car {
 		this.price = price;
 	}
 
-}
+}//클래스 종료
 
 
 

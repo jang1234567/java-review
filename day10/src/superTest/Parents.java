@@ -1,6 +1,6 @@
 package superTest;
 
-public class Parents {
+public class Parents {//클래스 시작
 	
 	//필드
 	int pVal;
@@ -16,4 +16,4 @@ public class Parents {
 		System.out.println("부모 생성자 호출");
 	}
 	
-}
+}//클래스 종료

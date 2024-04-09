@@ -3,8 +3,8 @@ package carTest;
 public class CarMain {
 	public static void main(String[] args) {
 		//부모 클래스의 객체 
-//		Car c1 = new Car();
-//		Car c2 = new Car("벤틀리", "red", 4000);
+		Car c1 = new Car();
+		Car c2 = new Car("벤틀리", "red", 4000);
 		
 		//자식 클래스의 객체
 //		System.out.println(sc1.booster);
@@ -14,13 +14,14 @@ public class CarMain {
 	
 //		System.out.println(c2);
 		System.out.println(sc2);
-//		c2.enginStart(); //부모클래스(슈퍼클래스) 객체
-//		sc2.enginStart(); //자식클래스(서브클래스) 객체
+		c2.enginStart(); //부모클래스(슈퍼클래스) 객체=> 부모클래스의 메소드 호출
+		sc2.enginStart(); //자식클래스(서브클래스) 객체=>오버라이딩한 메소드 호출
+		
 //		
-//		c2.enginStop();
-//		sc2.enginStop();
-////		System.out.println(c2);
-//		System.out.println(sc2);
+		c2.enginStop();
+		sc2.enginStop();//상속받았기 떄문에 부모클래스의 메소드 사용 가능
+		System.out.println(c2);
+		System.out.println(sc2);
 	}
 }
 

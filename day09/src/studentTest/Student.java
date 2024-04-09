@@ -59,22 +59,22 @@ public class Student {
 //	this.score = 학점
 //	return 학점
 	
-	char gradeScore(double avg) {
+	char gradeScore(double avg) { //문자형 반환, 매개변수로 평균점수 받아오기
 		//실수 형으로 작성 시
-		char grade;
-		if(avg >= 90) {
-			grade = 'A';
-		}else if(avg >= 70) {
-			grade = 'B';
-		}else if(avg >= 60) {
-			grade = 'C';
-		}else {
-			grade = 'F';
+		char grade; //문자형 변수 선언
+		if(avg >= 90) {//만약 받아온 매개변수avg가 90이상이라면
+			grade = 'A'; //grade A 대입
+		}else if(avg >= 70) {//만약 받아온 매개변수avg가 70이상이라면
+			grade = 'B';//grade B 대입
+		}else if(avg >= 60) {//만약 받아온 매개변수avg가 60이상이라면
+			grade = 'C';//grade C 대입
+		}else {//모두 아니라면
+			grade = 'F';//grade F 대입
 		}
-		this.score = grade;
-		return grade;
-	}
-}
+		this.score = grade; //객체 자기자신의 score에 grade값 대입
+		return grade;	//문자형 변수 grade를 반환한다
+	}//구현부 종료
+}//메소드 종료
 
 
 

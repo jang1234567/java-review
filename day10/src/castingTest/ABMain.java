@@ -9,10 +9,10 @@ public class ABMain {
 		A ab = new B(); //업캐스팅
 		System.out.println(ab);
 		
-		System.out.println(a instanceof A);
-		System.out.println(a instanceof B);
-		System.out.println(b instanceof B);
-		System.out.println(b instanceof A);
+		System.out.println(a instanceof A);//true
+		System.out.println(a instanceof B);//a는 부모클래스의 객체이므로 false
+		System.out.println(b instanceof B);//true
+		System.out.println(b instanceof A);//b는A의 자식클래스이므로 True
 		
 	}
 }

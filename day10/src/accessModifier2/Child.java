@@ -2,7 +2,7 @@ package accessModifier2;
 
 import accessModifier.A;
 
-public class Child extends A{
+public class Child extends A{ //다른 패키지의 A클래스 상속받음
 	//필드
 	int num;
 	
@@ -15,4 +15,4 @@ public class Child extends A{
 		System.out.println(var1);
 		System.out.println(var3);
 	}
-}
+}//클래스 종료

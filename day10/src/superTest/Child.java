@@ -1,6 +1,6 @@
 package superTest;
 
-public class Child extends Parents{
+public class Child extends Parents{ //Parents클래스를 상속받는 Child클래스
 	//필드
 	int chVal;
 
@@ -18,11 +18,12 @@ public class Child extends Parents{
 		//부모클래스에 있는 메소드를 호출
 		super.pMethod1();
 		super.pVal = 10;
+//		pVal은 부모클래스의 필드이기때문에 값이 같다
 		System.out.println(super.pVal);
 		System.out.println(this.pVal);
 		System.out.println("자식 클래스 메소드 호출");
 	}
-}
+}//클래스 종료
 
 
 

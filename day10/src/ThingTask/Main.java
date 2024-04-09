@@ -2,12 +2,14 @@ package ThingTask;
 
 public class Main {
 	public static void main(String[] args) {
+		//부모클래스의 객체 생성
 		Things things = new Things("물건");
+		//자식 클래스의 객체 생성
 		Book book = new Book("자바프로그래밍", "개발자");
 
 		System.out.println(things);
 		System.out.println(book);
-		things.printInfo();
+		things.printInfo(); //물건 출력
 		book.printInfo();
 
 //		A a = new A(10, 20);

@@ -2,13 +2,16 @@ package constructor;
 
 public class BookMain {
 	public static void main(String[] args) {
-		//Book 클래스의 객체
+		//Book 클래스의 객체 book1
 		Book book1 = new Book();
+		//book1 객체의 값 대입
 		book1.title = "자바의 신";
 		book1.author = "자바";
 		book1.price = 20000;
+		//book1 객체의 메소드 호출
 		book1.printBook();
 		
+		//Book 클래스의 객체 book2
 		Book book2 = new Book("자바프로그래밍", "개발자", 33000, 2024);
 		book2.printBook();
 		
@@ -16,16 +19,17 @@ public class BookMain {
 		System.out.println(book2.price + "원");
 		
 		
-	
+		//BookMain클래스의 객체 생성
 		BookMain bm = new BookMain();
-		System.out.println(bm);
-//		System.out.println(book1);
+		System.out.println(bm);//BookMain클래스의 객체
+		System.out.println(book1);//Book클래스의 객체
+		
 		
 		//객체마다의 가격 배열
 //		int[] prices = {book1.price, book2.price};
 //		System.out.println(bm.totalPrice(prices));//매개변수 o, 리턴값 o
 		
-	
+		//BookMain클래스의 객체 bm의 메소드 호출후 매개변수로 Book 클래스의 객체 대입
 		System.out.println(bm.totalPrice2(book1, book2) + "원");
 	}
 	
@@ -39,14 +43,15 @@ public class BookMain {
 //		//}
 //		//return 총합변수
 //		int total = 0;
-//		for(int price: prices ) {
+//		for(int price: prices ) { 정수형 배열 prices의 인덱스안의 값들을 정수형 변수 price에 저장
 //			total += price;
 //		}
 //		return total;
 //	}
 
 	//객체마다의 가격의 총합을 구하는 메소드
-	int totalPrice2(Book... books) {
+	int totalPrice2(Book... books) {//0개이상의 Book객체
+		//Book클래스의 books객체 선언
 		//총 가격을 구할 변수 선언
 		int total = 0;
 		//반복문(for~each문)

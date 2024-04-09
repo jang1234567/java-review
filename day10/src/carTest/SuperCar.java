@@ -23,7 +23,7 @@ public class SuperCar extends Car {
 	
 
 	//메소드 오버라이딩 : alt + shift+ s + v
-
+	//부모 클래스를 상속받아 부모클래스의 메소드를 재정의 할 수 있다
 	@Override
 	void enginStart() {
 //		super.enginStart();

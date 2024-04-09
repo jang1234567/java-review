@@ -1,6 +1,6 @@
 package ThingTask;
 
-public class Things {
+public class Things {//클래스 시작
 	   //필드 이름
 	   //생성자 매개변수1
 	   //메소드 printInfo : 이름을 출력
@@ -22,4 +22,4 @@ public class Things {
 	}
 	
 	
-}
+}//클래스 종료

@@ -1,10 +1,12 @@
 package castingTest;
 
-public class Main {
-	public static void main(String[] args) {
+public class Main {//클래스 시작
+	public static void main(String[] args) {//메인메소드 시작
 		//자료형 변수명 = 값;
 		//클래스타입 참조변수명(객체) = 참조값;
+//		부모클래스의 객체
 		Tv tv = new Tv();
+//		자식클래스의 객체
 		SmartTv sTv = new SmartTv();
 		
 		//tv 슈퍼클래스의 객체 : 필드 3개, 메소드 3개 접근 가능
@@ -33,7 +35,10 @@ public class Main {
 		//강제형변환
 //		자료형 변수명 = (자료형)값;
 		int num = (int)5.2;
+		
+		//Up casting된 t1을 다시 자식클래스 타입인 SmartTv 타입으로 down casting 시킨다
 		SmartTv s1 = (SmartTv) t1;
+		//netflix메소드는 자식클래스에만 존재하기 때문에 부모타입인 객체는 사용할 수 없다
 		s1.netflix();
 		
 		//잘못된 DownCasting
@@ -42,8 +47,8 @@ public class Main {
 //		DownCasting은 반드시 Up Casting 이 된 값으로 해야한다
 //		Up casting 된 값을 다시 원래 자식 타입으로 돌리것이 Down Casting이다
 		
-	}
-}
+	}//메인메소드 종료
+}//클래스 종료
 
 
 
