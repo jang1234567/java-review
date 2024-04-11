@@ -1,6 +1,6 @@
 package castingTest2;
 
-public class Student extends Person {
+public class Student extends Person {//Person클래스를 상속받는 Student 클래스 시작
 	// 필드
 	String schoolName;
 
@@ -13,7 +13,7 @@ public class Student extends Person {
 	// 메소드
 	// 메소드 오버라이딩
 	@Override
-	void eat() {
+	void eat() {//Person클래스의 메소드 재정의
 		System.out.println(this.name + "은/는 " + this.schoolName + 
 				"에서 밥을 먹는다");
 	}
@@ -23,7 +23,7 @@ public class Student extends Person {
 				"으로 등교한다");
 	}
 
-}
+}//클래스 종료
 
 
 

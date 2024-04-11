@@ -26,17 +26,17 @@ public class CastingTest {
 	}
 	
 	//매개변수 부모클래스 타입의 매개변수(들어오면서 자동 업캐스팅)
-	static void printWalk(Person person) {//스태틱, 리턴타입 X, 매개변수 Person클래스 타입의 person
-		if(person instanceof Student) {//person이 Student클래스 타입이라면
-			((Student)person).walk();	//Student클레스 타입으로 다운캐스팅
-		}else if(person instanceof Employee) {//person이 Employee타입이라면
-			((Employee)person).walk();//Employee 클래스 타입으로 다운캐스팅
-		}else { //전부 아니라면
-			System.out.println("걷기싫어");//걷기 싫어 출력
+	static void printWalk(Person person) {
+		if(person instanceof Student) {
+			((Student)person).walk();
+		}else if(person instanceof Employee) {
+			((Employee)person).walk();
+		}else {
+			System.out.println("걷기싫어");
 		}
-	}//메소드 구현 종료
+	}
 	
-}//클래스 종료
+}
 
 
 
