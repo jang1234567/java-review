@@ -28,8 +28,7 @@ public class TypeTest {//클래스 시작
 		//실제로 Child 클래스의 참조값(heap) 이 할당되었으므로 업캐스팅된다
 		System.out.println(pp);
 		System.out.println(pp instanceof Parents);//true
-		System.out.println(pp instanceof Child);//true
-		//업캐스팅 되어도 자식의 값을 넣었기 때문에 true이다
+		System.out.println(pp instanceof Child);//false
 		
 		//업캐스팅된 pp 객체를 다운 캐스팅
 		Child cc = (Child)pp;
