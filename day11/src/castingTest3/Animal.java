@@ -1,6 +1,6 @@
 package castingTest3;
 
-public class Animal {
+public class Animal {//Animal클래스 시작
 	//필드
 	int age;
 	String name;
@@ -18,4 +18,4 @@ public class Animal {
 	}
 	
 	
-}
+}//클래스 종료

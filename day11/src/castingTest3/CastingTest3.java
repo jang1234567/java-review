@@ -1,8 +1,8 @@
 package castingTest3;
 
-public class CastingTest3 {
-	public static void main(String[] args) {
-//		Animal animal = new Dog(); //업캐스팅
+public class CastingTest3 { //CastinTest3클래스 시작
+	public static void main(String[] args) {//메인메소드 시작
+//		Animal animal = new Dog(); //업캐스팅	=> 부모타입 animal에 자식값을 대입
 
 		// 1. 같은 메소드가 부모에도 있고 자식에도 있는 경우(오버라이딩)
 //		animal.crying();
@@ -27,7 +27,7 @@ public class CastingTest3 {
 		printText(new Dog("멍뭉이"));
 		printText(new Cat("별이"));
 		tryWalk(new Cat("버들"));
-	}
+	}//메인메소드 종료
 
 	// 1. 메소드의 매개변수로 여러 타입의 값을 전달받는 경우
 //	일반적으로는 각각의 타입을 처리하는 메소드를 별도로 만들어야한다
@@ -60,7 +60,7 @@ public class CastingTest3 {
 			System.out.println("산책가기 싫어");
 		}
 	}
-}
+}//CastingTest3 클래스 종료
 
 
 
