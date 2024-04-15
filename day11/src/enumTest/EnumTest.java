@@ -1,6 +1,6 @@
 package enumTest;
 
-public class EnumTest {
+public class EnumTest {//EnumTest클래스 시작
 	//열거형 상수 정의
 	enum Day {
 		MONDAY,
@@ -12,7 +12,7 @@ public class EnumTest {
 		SUNDAY
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { //메인메소드시작
 		//열거형 상수 사용
 		Day today = Day.MONDAY;
 		
@@ -35,8 +35,8 @@ public class EnumTest {
 		Day date = Day.valueOf(dayStr);
 		System.out.println(date);
 		
-	}
-}
+	}//메인메소드 종료
+}//EnumTest클래스 종료
 
 
 
